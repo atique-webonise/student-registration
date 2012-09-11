@@ -13,9 +13,13 @@ h1
 	background-color:orange;
 }
 div.stud_reg {
+	width: 360px;
+	background-color: #FDEEF4;
+	border: 1px solid;
+	border-color:red; 
 	float:right;
-	padding-top: 10px;
-	padding-right: 50px;
+	margin-top: 10px;
+	margin-right: 500px;
 	}
 div.spacer {
   clear: both;
@@ -30,29 +34,34 @@ div.row span.label {
   width: 100px;
   text-align: right;
   }
-
+.box {
+border-style: solid;
+border-color: #E9CFEC;
+}
 div.row span.formw {
+  border-style: none; 
   float: right;
   width: 235px;
   text-align: left;
   }
 </style>
 </head>
+<body>
 <div>
 	<div class="header">
 	<h1>Welcome to Students Registration</h1>
 	</div>
-	<div class="stud_reg" style="width: 360px; background-color: #ccc; border: 1px dotted #333; margin: 0px auto;">
+	<div class="stud_reg" style="">
 	  <form action="http://blooming-beach-2334.herokuapp.com/users.json" method="post" enctype=>
 		<div class="row">
 			<span class="label">Name:</span>
 			<span class="formw">
-				<input type="text" size="25" name="name" required="required"/>
+				<input class="box" type="text" size="25" name="name" required="required"/>
 			</span>
 		</div>
 		<div class="row">
 			<span class="label">Age:</span>
-			<span class="formw"><input type="number" size="25" name="age" required="required" min="10" max="140"/></span>
+			<span class="formw"><input class="box" type="number" size="25" name="age" required="required" min="10" max="140"/></span>
 		</div>
 		<div class="row">
 			<span class="label">Gender</span>
@@ -66,33 +75,37 @@ div.row span.formw {
 		</div>
 		<div class="row">
 			<span class="label">Email ID</span>
-			<span class="formw"><input type="email" size="25" name="email" required="required"/></span>
+			<span class="formw"><input class="box" type="email" size="25" name="email" required="required"/></span>
 		</div>
 		<div class="row">
 			<span class="label">Description:</span>
 			<span class="formw">
-				<textarea cols="25" rows="8">Go ahead - write something...</textarea>
+				<textarea class="box" cols="25" rows="8">Go ahead - write something...</textarea>
 			</span>
 		</div>
 		<div class="row">
 			<span class="label">Address:</span>
 			<span class="formw">
-				<textarea cols="25" rows="8">Go ahead - write something...</textarea>
+				<textarea class="box" cols="25" rows="8">Go ahead - write something...</textarea>
 			</span>
 		</div>   
 		<div class="row">
 			<span class="label">Pincode:</span>
 			<span class="formw">
-				<input type="number" pattern="^([0-9]{6})?$" name="pincode" required="required"/>
+				<input class="box" type="number" pattern="^([0-9]{6})?$" name="pincode" required="required"/>
 			</span>
 		</div>
 		<div class="row">
-			<span class="formw">
+			<span class="label">
 				<input type="submit" value="Submit"/>
+			</span>
+			<span class="formw">
+				<input type="button" value="Show all students" onClick="parent.location='http://blooming-beach-2334.herokuapp.com/users.json'" />
 			</span>
 		</div>
 		<div class="spacer">&nbsp;</div>
 	</form>
 </div>
 </div>
+</body>
 </html>
