@@ -12,6 +12,17 @@ div.header
 	border-color:#E9CFEC;
 	margin: 0 0 0 0px;
 }
+div.footer
+{
+	color:#800517;
+	border:1px solid;
+	border-radius: 10px;
+	text-align:center;
+	background-color:#FDEEF4;
+	border-color:#E9CFEC;
+	height:100px;
+	margin: 0 0 0 0px;
+}
 div.stud_reg_header {
 	background-color:#D7C9CE;
 	border-radius: 10px;
@@ -28,7 +39,7 @@ div.stud_reg {
 	border:1px solid;
 	border-color:#E9CFEC;
 	float:right;
-	margin: 50px 50px 50px 50px;
+	margin: 20px 50px 20px 20px;
 	}
 div.spacer {
   clear: both;

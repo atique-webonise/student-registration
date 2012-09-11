@@ -4,7 +4,7 @@
 <link rel=StyleSheet href="stud_form.css" TYPE="text/css">
 </head>
 <body>
-<div>
+<div class="main" >
 	<div class="header">
 	<h1>Welcome to Students Registration</h1>
 	</div>
@@ -14,7 +14,7 @@
 		<div class="row">
 			<span class="label">Name:</span>
 			<span class="formw">
-				<input class="box" type="text" size="25" name="name" required="required"/>
+				<input class="box" type="text" pattern="[A-Za-z]+" size="25" name="name" required="required"/>
 			</span>
 		</div>
 		<div class="row">
@@ -57,13 +57,23 @@
 			<span class="label">
 				<input type="submit" value="Submit"/>
 			</span>
-			<span class="formw">
-				<input type="button" value="Show all students" onClick="parent.location='http://blooming-beach-2334.herokuapp.com/users.json'" />
-			</span>
 		</div>
 		<div class="spacer">&nbsp;</div>
 	</form>
+	<form>
+		<span class="formw">
+			<input type="button" value="Show all students" onClick="parent.location='http://blooming-beach-2334.herokuapp.com/users.json'" />
+		</span>
+		
+	</form>
 </div>
+	<div class=spacer>
+	<span><label></label></span>
+	</div>
+	<div class=footer>
+	<span><h4>copyright&copy;weboniselab.com</h4></span>
+	</div>
 </div>
+
 </body>
 </html>
