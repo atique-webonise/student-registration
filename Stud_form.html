@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+textarea
+{
+	resize: none;
+}
+h1
+{
+	color:blue;
+	text-align:center;
+	background-color:orange;
+}
+div.stud_reg {
+	float:right;
+	padding-top: 10px;
+	padding-right: 50px;
+	}
+div.spacer {
+  clear: both;
+  }
+div.row {
+  clear: both;
+  padding-top: 5px;
+  }
+
+div.row span.label {
+  float: left;
+  width: 100px;
+  text-align: right;
+  }
+
+div.row span.formw {
+  float: right;
+  width: 235px;
+  text-align: left;
+  }
+</style>
+</head>
+<div>
+	<div class="header">
+	<h1>Welcome to Students Registration</h1>
+	</div>
+	<div class="stud_reg" style="width: 360px; background-color: #ccc; border: 1px dotted #333; margin: 0px auto;">
+	  <form action="http://blooming-beach-2334.herokuapp.com/users.json" method="post" enctype=>
+		<div class="row">
+			<span class="label">Name:</span>
+			<span class="formw">
+				<input type="text" size="25" name="name" required="required"/>
+			</span>
+		</div>
+		<div class="row">
+			<span class="label">Age:</span>
+			<span class="formw"><input type="number" size="25" name="age" required="required" min="10" max="140"/></span>
+		</div>
+		<div class="row">
+			<span class="label">Gender</span>
+			<span class="formw">
+				<select name="sex" id="sex" class="required" required >
+                    <option value="">Select Gender</option>
+                    <option value="Male" selected="selected">Male</option>
+                    <option value="Female">Female</option>
+				</select>
+			</span>
+		</div>
+		<div class="row">
+			<span class="label">Email ID</span>
+			<span class="formw"><input type="email" size="25" name="email" required="required"/></span>
+		</div>
+		<div class="row">
+			<span class="label">Description:</span>
+			<span class="formw">
+				<textarea cols="25" rows="8">Go ahead - write something...</textarea>
+			</span>
+		</div>
+		<div class="row">
+			<span class="label">Address:</span>
+			<span class="formw">
+				<textarea cols="25" rows="8">Go ahead - write something...</textarea>
+			</span>
+		</div>   
+		<div class="row">
+			<span class="label">Pincode:</span>
+			<span class="formw">
+				<input type="number" pattern="^([0-9]{6})?$" name="pincode" required="required"/>
+			</span>
+		</div>
+		<div class="row">
+			<span class="formw">
+				<input type="submit" value="Submit"/>
+			</span>
+		</div>
+		<div class="spacer">&nbsp;</div>
+	</form>
+</div>
+</div>
+</html>
