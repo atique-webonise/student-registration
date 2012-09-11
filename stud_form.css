@@ -6,6 +6,7 @@ div.header
 {
 	color:#800517;
 	border:1px solid;
+	border-radius: 10px;
 	text-align:center;
 	background-color:#FDEEF4;
 	border-color:#E9CFEC;
@@ -13,6 +14,7 @@ div.header
 }
 div.stud_reg_header {
 	background-color:#D7C9CE;
+	border-radius: 10px;
 	border:1px solid;
 	border-color:#E9CFEC;
 	text-align:center;
@@ -20,6 +22,7 @@ div.stud_reg_header {
 }
 
 div.stud_reg {
+	border-radius: 15px;
 	width: 360px;
 	background-color: #FDEEF4;
 	border:1px solid;
@@ -42,6 +45,7 @@ div.row span.label {
   text-align: right;
   }
 .box {
+border-radius: 5px;
 border-style: solid;
 border-color: #E9CFEC;
 }
