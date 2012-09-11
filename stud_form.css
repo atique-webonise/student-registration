@@ -1,0 +1,42 @@
+textarea
+{
+	resize: none;
+}
+h1
+{
+	color:blue;
+	text-align:center;
+	background-color:orange;
+}
+div.stud_reg {
+	width: 360px;
+	background-color: #FDEEF4;
+	border: 1px solid;
+	border-color:#E9CFEC;
+	float:right;
+	margin-top: 10px;
+	margin-right: 500px auto;
+	}
+div.spacer {
+  clear: both;
+  }
+div.row {
+  clear: both;
+  padding-top: 5px;
+  }
+
+div.row span.label {
+  float: left;
+  width: 100px;
+  text-align: right;
+  }
+.box {
+border-style: solid;
+border-color: #E9CFEC;
+}
+div.row span.formw {
+  border-style: none; 
+  float: right;
+  width: 235px;
+  text-align: left;
+  }
