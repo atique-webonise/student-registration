@@ -8,7 +8,8 @@
 	<div class="header">
 	<h1>Welcome to Students Registration</h1>
 	</div>
-	<div class="stud_reg" style="">
+	<div class="stud_reg" >
+		<div class="stud_reg_header"><h3>Submit your Data</h3></div>
 	  <form action="http://blooming-beach-2334.herokuapp.com/users.json" method="post" enctype=>
 		<div class="row">
 			<span class="label">Name:</span>
@@ -23,7 +24,7 @@
 		<div class="row">
 			<span class="label">Gender</span>
 			<span class="formw">
-				<select name="sex" id="sex" class="required" required >
+				<select name="gender" id="gender" class="required" required >
                     <option value="">Select Gender</option>
                     <option value="Male" selected="selected">Male</option>
                     <option value="Female">Female</option>
@@ -37,19 +38,19 @@
 		<div class="row">
 			<span class="label">Description:</span>
 			<span class="formw">
-				<textarea class="box" cols="25" rows="8">Go ahead - write something...</textarea>
+				<textarea class="box" cols="25" rows="8" name="description">Go ahead - write something...</textarea>
 			</span>
 		</div>
 		<div class="row">
 			<span class="label">Address:</span>
 			<span class="formw">
-				<textarea class="box" cols="25" rows="8">Go ahead - write something...</textarea>
+				<textarea class="box" cols="25" rows="8" name="address">Go ahead - write something...</textarea>
 			</span>
 		</div>   
 		<div class="row">
 			<span class="label">Pincode:</span>
 			<span class="formw">
-				<input class="box" type="number" pattern="^([0-9]{6})?$" name="pincode" required="required"/>
+				<input class="box" type="number" pattern="^[0-9]{6}$" name="pincode" required="required"/>
 			</span>
 		</div>
 		<div class="row">

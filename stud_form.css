@@ -2,30 +2,41 @@ textarea
 {
 	resize: none;
 }
-h1
+div.header
 {
-	color:blue;
+	color:#800517;
+	border:1px solid;
 	text-align:center;
-	background-color:orange;
+	background-color:#FDEEF4;
+	border-color:#E9CFEC;
+	margin: 0 0 0 0px;
 }
+div.stud_reg_header {
+	background-color:#D7C9CE;
+	border:1px solid;
+	border-color:#E9CFEC;
+	text-align:center;
+	color:#800517;
+}
+
 div.stud_reg {
 	width: 360px;
 	background-color: #FDEEF4;
-	border: 1px solid;
+	border:1px solid;
 	border-color:#E9CFEC;
 	float:right;
-	margin-top: 10px;
-	margin-right: 500px auto;
+	margin: 50px 50px 50px 50px;
 	}
 div.spacer {
   clear: both;
   }
 div.row {
   clear: both;
-  padding-top: 5px;
+  padding-top: 10px;
   }
 
 div.row span.label {
+  color: #800517;
   float: left;
   width: 100px;
   text-align: right;
