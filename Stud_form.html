@@ -8,6 +8,12 @@
 	<div class="header">
 	<h1>Welcome to Students Registration</h1>
 	</div>
+	<div class="info" ><div class="image"><img src="images/register.jpg" height=300px ><div class=spacer>
+	<span><label></label></span>
+	</div></div>
+		<div><span></span></div>
+		<div class="data"><span>This is students Registration form for the blooming beach application running on herokuapp.com</span></div>
+	</div>
 	<div class="stud_reg" >
 		<div class="stud_reg_header"><h3>Submit your Data</h3></div>
 	  <form action="http://blooming-beach-2334.herokuapp.com/users.json" method="post" enctype=>
@@ -22,7 +28,7 @@
 			<span class="formw"><input class="box" type="number" size="25" name="age" required="required" min="1" max="120"/></span>
 		</div>
 		<div class="row">
-			<span class="label">Gender</span>
+			<span class="label">Gender:</span>
 			<span class="formw">
 				<select name="gender" id="gender" class="required" required >
                     <option value="">Select Gender</option>
@@ -32,19 +38,19 @@
 			</span>
 		</div>
 		<div class="row">
-			<span class="label">Email ID</span>
+			<span class="label">Email ID:</span>
 			<span class="formw"><input class="box" type="email" size="25" name="email" required="required"/></span>
 		</div>
 		<div class="row">
 			<span class="label">Description:</span>
 			<span class="formw">
-				<textarea class="box" cols="25" rows="8" name="description">Go ahead - write something...</textarea>
+				<textarea class="box" cols="25" rows="8" name="description" required></textarea>
 			</span>
 		</div>
 		<div class="row">
 			<span class="label">Address:</span>
 			<span class="formw">
-				<textarea class="box" cols="25" rows="8" name="address">Go ahead - write something...</textarea>
+				<textarea class="box" cols="25" rows="8" name="address" required></textarea>
 			</span>
 		</div>   
 		<div class="row">
@@ -54,18 +60,21 @@
 			</span>
 		</div>
 		<div class="row">
-			<span class="label">
+			<span class="label"></span>
+			<span class="formw">
 				<input type="submit" value="Submit"/>
 			</span>
 		</div>
 		<div class="spacer">&nbsp;</div>
 	</form>
-	<form>
+	<div class="row">
+		<span class="label"></span>
+	<form action="http://blooming-beach-2334.herokuapp.com/users.json" method="get">
 		<span class="formw">
-			<input type="button" value="Show all students" onClick="parent.location='http://blooming-beach-2334.herokuapp.com/users.json'" />
+			<input type="submit" value="Show all records"/>
 		</span>
-		
 	</form>
+	</div>
 </div>
 	<div class=spacer>
 	<span><label></label></span>
